@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 25vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 10x;
+}
+.App-body {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.Metamask-button{
+  height: 35px;
+  padding-right: 25px;
+  padding-top: 25px;
+}
+.Metamask-position{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.Function-buttons{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  
+  /* padding-left: 77px;  */
+  padding-top: 43px;
+}
+.grill-text{
+  height: 50px;
+  padding-top: 50px;
+}
+.left-button {
+  padding-right: 10px;
+  top: 30px;
+  width: 350px;
+  height: 300px;
+}
+.right-button {
+  padding-left: 10px;
+  top: 30px;
+  width: 350px;
+  height: 300px;
+}
+.workspace-container{
+  width: 100%;
+  /* width: 1004px;
+  height: 458px; */
+  width: 904px;
+  height: 458px;
+  padding-right: -53px;
+  margin-left: -16px;
+  background-size: contain;
+  margin-top: -19px;
+  /* background-color: #282c34; */
+  
+}
+.separator-div{
+  height: 100px;
+}
+.card-buttons{
+  width: 685px;
+  height: 450px;
+  object-fit: cover; 
+}
+.buttons-div{
+  display: flex;
+  justify-content: center;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
