@@ -1,5 +1,5 @@
 import React from 'react';
-import logginButton from "../Assets/metamaskLogin.png"
+import logginButton from "../Assets/metamask_login.jpg"
 
 export class MetamaskButton extends React.Component {
   constructor(props) {
@@ -8,7 +8,13 @@ export class MetamaskButton extends React.Component {
   }
   async onClickMetamask() {
     await this.loadWeb3()
-    this.props.setUser(window.web3.eth.accounts[0])
+    console.log(window.web3.eth)
+    const me = this
+    window.web3.eth.getAccounts(function(err, accounts){
+      if (err != null) console.error("An error occurred: "+err);
+      else if (accounts.length === 0) me.setState({user: ""})
+      else me.setState({user: accounts[0]})
+    });
     window.web3.eth.defaultAccount = window.web3.eth.accounts[0]
   }
 
